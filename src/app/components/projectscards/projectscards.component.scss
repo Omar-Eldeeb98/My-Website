@@ -1,0 +1,87 @@
+.card {
+  background-color: #21232e;
+  border: 2px solid #283593;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .fixed-icon {
+  position: fixed;
+  top: 2.5%;
+  right: 4.5%;
+  z-index: 333;
+  font-size: 18px;
+  color: #283593;
+  background-color: #9fa8da;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  transition: all 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.07);
+}
+
+.card .card-body h3 {
+  color: #9fa8da;
+}
+.card .card-body p {
+  color: #9fa8da;
+  text-align: start;
+  width: 100%;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid #283593;
+}
+
+.custom-hr {
+  border: 2px solid white !important;
+  border-radius: 6px;
+}
+
+.live-demo a {
+  text-decoration: none;
+  color: #9fa8da;
+  background-color: transparent;
+  border: 1px solid #9fa8da;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.live-demo a:hover {
+  color: #9fa8da;
+  background-color: #283593;
+}
+
+.live-demo a.project-codes {
+  color: #9fa8da;
+  background-color: transparent;
+  border: 1px solid #9fa8da;
+}
+
+.live-demo a.project-codes:hover {
+  color: #9fa8da;
+  background-color: #283593;
+}
+
+.card-footer {
+  border-top-color: #283593 !important;
+}
+
+.card-footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.card img.img_ {
+  width: 100% !important;
+  height: 250px !important;
+}

@@ -1,0 +1,12 @@
+<section class="rounded mt-3 raleway-font">
+  <div class="container-fluid">
+    <div class="row p-3 g-3">
+      <div
+        class="col-md-6 col-lg-4 animate__animated animate__backInLeft animate__repeat-1"
+        *ngFor="let project_ of projects_"
+      >
+        <app-projectscards [project]="project_"></app-projectscards>
+      </div>
+    </div>
+  </div>
+</section>

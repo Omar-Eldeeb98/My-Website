@@ -1,0 +1,71 @@
+<section class="rounded raleway-font">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-5">
+        <div
+          class="about-me m-3 p-2 rounded shadow animate__animated animate__backInLeft animate__repeat-1"
+        >
+          <h2 class="my-3 mt-1 text-uppercase">About Me.</h2>
+          <div class="my-image">
+            <img src="assets/me.jpg" class="w-100" alt="omar dev" />
+          </div>
+          <hr class="custom-hr w-75 mx-auto mt-3" />
+          <div class="info rounded shadow">
+            <p class="text-capitalize">
+              hi i'm
+              <span class="fw-bold text-uppercase lead">
+                omar makram eldeeb</span
+              >
+              ,from damanhur, egypt. I work as a Software Engineer and
+              specialize in Angular (2+) Front-End Web Development. My passion
+              lies in crafting responsive web applications. Proficient in
+              Angular Framework, TypeScript, HTML5, CSS3, Bootstrap 5, jQuery,
+              API integration, ECMAScript 6, and JavaScript. I thrive on
+              learning and teamwork, dedicated to staying updated on industry
+              advancements and emerging technologies to improve skills and
+              deliver innovative solutions consistently.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-7">
+        <div
+          class="featured-projects m-3 p-2 rounded shadow animate__animated animate__backInRight animate__repeat-1"
+        >
+          <h2 class="my-3 mt-1 text-capitalize text-center">
+            Featured Projects.
+          </h2>
+          <p class="shadow-lg">{{ featuredProjects.name }}</p>
+          <carousel [isAnimated]="true" [showIndicators]="true">
+            <div *ngFor="let picture of featuredProjects.pictures">
+              <slide class="shadow-lg">
+                <img
+                  class="img-thumbnail"
+                  [src]="picture"
+                  alt="first slide"
+                  style="display: block; width: 100%"
+                />
+              </slide>
+            </div>
+          </carousel>
+
+          <p class="full-desc mt-2">{{ featuredProjects.description }}</p>
+          <hr class="custom-hr_" />
+          <div class="d-flex justify-content-start align-items-center">
+            <span class="text-capitalize">Visit Portfolio to see more !</span>
+
+            <a
+              [routerLink]="['/portfolio']"
+              class="text-uppercase text-decoration-none my-2 mb-2"
+            >
+              <div>
+                <i class="fa-solid fa-right-long"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

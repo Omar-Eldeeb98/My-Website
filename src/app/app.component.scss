@@ -1,0 +1,27 @@
+section {
+  // background-color: #001222;
+  // color: white;
+  position: relative;
+}
+
+.fixed-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #283593;
+  position: fixed;
+  top: 91%;
+  right: 2%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px double #9fa8da;
+  overflow: hidden;
+}
+
+.fixed-icon i {
+  font-size: 20px;
+  color: #9fa8da;
+  font-weight: bold;
+}
