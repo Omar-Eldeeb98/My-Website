@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/*================= global font =============== */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #9fa8da;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #283593;
+  border-radius: 8px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

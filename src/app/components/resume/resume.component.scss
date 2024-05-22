@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section {
+  background-color: #001222;
+}
+.col-md-11 div.btn-div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-md-11 div button {
+  background-color: transparent;
+  color: #9fa8da;
+  border: 2px solid #283593;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+}
+
+.col-md-11 div button:hover {
+  background-color: #283593;
+}
+
+.custom-hr {
+  border: 1px solid #7d89cc !important;
+  border-radius: 6px;
+}
+
+.education-card {
+  background-color: #21232e !important;
+  border: 2px solid #283593 !important;
+}
+
+.education-card h2 {
+  color: #9fa8da !important;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 30px !important;
+}
+
+.education-card div.header-div i {
+  color: #7d89cc !important;
+  font-size: 35px !important;
+}
+.education-card .educa-1 {
+  border: 1px solid #7d89cc;
+}
+.education-card .educa-1 h3 {
+  color: #9fa8da;
+  line-height: 2.4rem;
+}
+
+.education-card .educa-1 p {
+  color: #9fa8da;
+  padding-inline-start: 50px !important;
+  text-align: start;
+}
+.education-card .educa-1 h3 span.small {
+  color: #7d89cc;
+  border-radius: 6px;
+  border: 1px solid #7d89cc;
+  padding: 4px;
+}
+
+.header-div {
+  background-color: #283593;
+}
+
+.skills-card {
+  background-color: #21232e !important;
+  border: 1px solid #283593 !important;
+}
+.skills-card h2 {
+  color: #9fa8da !important;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 30px !important;
+}
+
+.skills-card div.header-div i {
+  color: #7d89cc !important;
+  font-size: 35px !important;
+}
+
+.skills-card .programming {
+  background-color: black !important;
+  border: 1px solid #9fa8da;
+  transition: all 0.3s ease;
+}
+.skills-card .programming:hover {
+  transform: scale(1.03);
+}
+
+.skills-card .programming h4 {
+  color: #9fa8da;
+  font-size: 25px !important;
+}
+.skills-card .programming div img {
+  width: 45px;
+  height: 45px;
+}
+
+.concepts span {
+  background-color: #283593;
+  color: #9fa8da;
+  margin: 3px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  border: 1px solid #9fa8da;
+}
+
+.Experience-card {
+  background-color: #21232e !important;
+  border: 2px solid #283593 !important;
+}
+
+.Experience-card h2 {
+  color: #9fa8da !important;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 30px !important;
+}
+
+.Experience-card div.header-div i {
+  color: #7d89cc !important;
+  font-size: 35px !important;
+}
+.Experience-card .exp-1 h3 {
+  color: #9fa8da;
+  line-height: 2.4rem;
+  border: 1px solid #9fa8da;
+}
+
+.Experience-card .exp-1 span.small {
+  color: #7d89cc;
+  border-radius: 6px;
+  border: 1px solid #7d89cc;
+  padding: 4px;
+}
+
+.role {
+  background-color: black !important;
+  border: 1px solid #7d89cc;
+}
+
+.role p,
+h5 {
+  color: #9fa8da !important;
+}
+@media screen and (max-width: 768px) {
+  .education-card .educa-1 {
+    padding-inline: 6px;
+  }
+
+  .education-card .educa-1 h3 {
+    width: 100%;
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .education-card .educa-1 p {
+    padding-inline-start: 4px !important;
+    text-align: center !important;
+  }
+
+  .education-card .educa-1 h3 span.small {
+    display: block;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .skills-card h2 {
+    font-size: 25px !important;
+    font-weight: bolder;
+  }
+
+  .Experience-card .exp-1 {
+    padding-inline: 6px;
+  }
+
+  .Experience-card .exp-1 h3 {
+    font-size: 18px !important;
+    text-align: start;
+    text-align: center !important;
+  }
+
+  .Experience-card .exp-1 h3 span.small {
+    display: block;
+    margin-top: 6px;
+    text-align: center;
+  }
+}

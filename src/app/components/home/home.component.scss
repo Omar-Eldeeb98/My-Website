@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+section {
+  background-color: #001222;
+}
+.about-me {
+  background-color: #21232e;
+  outline: 2px solid #283593;
+  height: 96% !important;
+}
+
+.about-me h2 {
+  font-size: 40px !important;
+  color: #9fa8da;
+  text-align: center;
+  background-color: #283593;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+}
+
+.my-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-inline: auto;
+  border: 8px double #283593;
+}
+
+.custom-hr {
+  border: 3px solid #7d89cc !important;
+  border-radius: 6px;
+}
+
+.custom-hr_ {
+  border: 1px solid #7d89cc !important;
+}
+
+.about-me .info {
+  background-color: #001222;
+  padding: 8px;
+  color: #9fa8da;
+  border: 1px solid #283593;
+}
+
+.about-me .info p {
+  letter-spacing: 2x;
+  line-height: 1.8rem;
+}
+
+.about-me .info p span {
+  color: #9fa8da;
+  background-color: #334498;
+  padding: 2px 3px;
+  border-radius: 4px;
+}
+
+.featured-projects {
+  background-color: #21232e;
+  outline: 2px solid #283593;
+}
+
+.featured-projects h2 {
+  font-size: 40px !important;
+  color: #9fa8da;
+  text-align: center;
+  background-color: #283593;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+}
+
+.featured-projects p {
+  color: #283593 !important;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #001222;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #334498;
+}
+
+.featured-projects span {
+  color: #9ea7d8;
+  margin-left: 6px;
+}
+
+.featured-projects p.full-desc {
+  color: #9fa8da !important;
+  font-weight: normal;
+
+  margin-top: 16px !important;
+}
+
+.featured-projects a.more {
+  color: #9fa8da;
+  background-color: transparent;
+  margin-left: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #283593;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.featured-projects a.more:hover {
+  background-color: #9fa8da;
+  color: #21232e;
+  border-radius: 8px;
+}
+
+div slide img {
+  height: 412px !important;
+}
+
+::ng-deep .carousel .carousel-control-prev-icon,
+::ng-deep .carousel .carousel-control-next-icon {
+  background-color: #334498;
+  border: 1px solid gray;
+  width: 40px;
+  height: 40px;
+  background-size: 45%;
+  border-radius: 50%;
+}
+::ng-deep .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+::ng-deep .carousel-indicators .active {
+  background-color: #334498 !important;
+}
+::ng-deep .carousel-indicators {
+  background-color: #7d89cc;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 1px 10px;
+  margin-inline: auto;
+}
+
+.tags__ {
+  background-color: #001222;
+  border: 1px solid #283592;
+}
+
+.tags__ img {
+  width: 40px;
+  height: 40px;
+}
+
+.project-codes,
+.project-demo {
+  text-decoration: none;
+  color: #7d89cc;
+  background-color: #001222;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #283592;
+}
+
+.project-demo:hover {
+  background-color: #9fa8da;
+  color: #283593;
+}
+.project-codes:hover {
+  background-color: #9fa8da;
+  color: #283593;
+}
+
+@media screen and (max-width: 768px) {
+  div slide img {
+    height: auto !important;
+  }
+  .about-me {
+    height: auto !important;
+  }
+  .about-me .info p {
+    font-size: 16px !important;
+  }
+  .about-me .info p span {
+    font-size: 16px !important;
+  }
+
+  .featured-projects h2 {
+    font-size: 35px !important;
+  }
+
+  .featured-projects p.full-desc {
+    font-size: 17px !important;
+  }
+}

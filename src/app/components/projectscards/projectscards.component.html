@@ -1,0 +1,42 @@
+<div class="card p-2 shadow-lg h-100">
+  <div class="fixed-icon">
+    <i class="fa-solid fa-camera d-inline-block"></i>
+  </div>
+
+  <img
+    (click)="openProjectModal()"
+    [src]="project.headerPic"
+    class="img_ card-img-top img-thumbnail"
+    alt="project photo is here "
+  />
+  <div class="px-0 card-body d-flex flex-column justify-content-between">
+    <h3 class="card-title text-capitalize text-center mb-3">
+      {{ project.name }}
+    </h3>
+    <p class="card-text text-capitalize my-2 p-2 shadow">
+      ➡️ {{ project.description }}
+    </p>
+    <div class="live-demo text-center mt-4 mb-2">
+      <a
+        class="text-capitalize me-2"
+        [href]="project.liveDemoLink"
+        target="_blank"
+      >
+        <i class="fa-solid fa-eye me-2"></i>Visit
+      </a>
+      <a
+        class="project-codes text-capitalize"
+        [href]="project.projectCodesLink"
+        target="_blank"
+      >
+        <i class="fa-brands fa-github me-2"></i>Codes</a
+      >
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <div class="text-center pt-2">
+      <img *ngFor="let tag of project.tags" [src]="tag" alt="tags" />
+    </div>
+  </div>
+</div>

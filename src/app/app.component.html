@@ -1,0 +1,44 @@
+<div class="loading" *ngIf="isLoading">
+  <div class="logo-container mb-3 animate__animated animate__fadeInDownBig">
+    <img src="assets/logo00.png" alt="logo" class="w-100" />
+  </div>
+
+  <span class="loader"></span>
+
+  <div
+    class="notification align-items-center animate__animated animate__bounceOutRight animate__delay-2s mt-4 shadow"
+  >
+    <div class="notiglow"></div>
+    <div class="notiborderglow"></div>
+    <div class="notititle">Hello Friend !</div>
+    <div class="notibody">Welcome To My Website</div>
+    <div class="notititle"><small>Omar Eldeeb </small></div>
+  </div>
+
+  <!-- <div
+    class="hello mt-4 d-flex justify-content-center align-items-center animate__animated animate__bounceOutRight animate__delay-2s"
+  >
+    <h5 class="fw-bold text-center text-capitalize p-0 m-0">hello friend !</h5>
+    <img src="assets/message.png" alt="hello-message" class="" />
+  </div> -->
+</div>
+<div *ngIf="!isLoading"><app-header></app-header></div>
+
+<app-navbar *ngIf="!isLoading"></app-navbar>
+
+<div class="mx-1 my-1" *ngIf="!isLoading">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="" *ngIf="!isLoading">
+  <app-footer></app-footer>
+</div>
+
+<div
+  #fixed
+  class="fixed-icon shadow-lg d-none"
+  (click)="scrollTop()"
+  *ngIf="!isLoading"
+>
+  <i class="fa-solid fa-angles-up fa-bounce"></i>
+</div>

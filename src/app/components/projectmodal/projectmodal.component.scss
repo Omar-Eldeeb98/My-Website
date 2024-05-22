@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.modal-container {
+  background-color: #21232e;
+  border-radius: 8px;
+  border: 2px solid #283593;
+}
+
+.modal-container .modal-header h2 {
+  color: #9fa8da !important;
+}
+.modal-container .modal-header button.btn-close {
+  background-color: #9fa8da;
+  border-radius: 50%;
+}
+
+.modal-body h3 {
+  color: #9fa8da;
+  background-color: black;
+  width: fit-content;
+}
+
+.modal-body p {
+  color: #9fa8da;
+}
+
+div img.img-tags {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.visit- a {
+  background-color: transparent;
+  color: #9fa8da;
+  border: 1px solid #9fa8da;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 8px 14px;
+}
+
+.visit- a:hover {
+  background-color: #283593;
+}
+
+::ng-deep .carousel .carousel-control-prev-icon,
+::ng-deep .carousel .carousel-control-next-icon {
+  background-color: #334498;
+  border: 1px solid gray;
+  width: 45px;
+  height: 45px;
+  background-size: 50%;
+  border-radius: 50%;
+}
+::ng-deep .carousel-indicators {
+  background-color: #7d89cc;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 1px 10px;
+  margin-inline: auto;
+}
+::ng-deep .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+::ng-deep .carousel-indicators .active {
+  background-color: #334498 !important;
+}
+
+carousel div slide img {
+  height: 440px !important;
+}
+
+.custom-hr {
+  border: 2px solid #283593 !important;
+  border-radius: 4px;
+}
+/**================================ media query ========================*/
+
+@media screen and (max-width: 768px) {
+  carousel div slide img {
+    height: auto !important;
+  }
+
+  .modal-body p {
+    font-size: 16px !important;
+  }
+}

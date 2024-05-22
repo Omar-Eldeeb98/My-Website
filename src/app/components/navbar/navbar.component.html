@@ -1,0 +1,61 @@
+<nav
+  class="navbar navbar-expand-lg bg-body-tertiary mx-1 my-1 shadow-lg rounded sticky-top raleway-font"
+>
+  <div class="container-fluid d-flex gap-2">
+    <a class="navbar-brand fixed-top mt-2" routerLink="/home"
+      ><img src="assets/logo00.png" class="w-100" alt="logo"
+    /></a>
+    <button
+      (click)="isChanged = !isChanged"
+      class="navbar-toggler m-1 ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span [ngClass]="{ 'd-none': isChanged }" class="m-0 p-0"
+        ><i class="fa-solid fa-bars fw-bold"></i
+      ></span>
+      <span [ngClass]="{ 'd-none': !isChanged }" class="m-0 p-0">
+        <i class="fa-solid fa-xmark fw-bold"></i
+      ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mb-2">
+          <a class="nav-link" routerLinkActive="active-link" routerLink="/home"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLinkActive="active-link"
+            routerLink="/portfolio"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item mb-2">
+          <a
+            class="nav-link"
+            routerLinkActive="active-link"
+            routerLink="/resume"
+            >Resume</a
+          >
+        </li>
+
+        <li class="nav-item mb-2">
+          <a
+            class="nav-link"
+            routerLinkActive="active-link"
+            routerLink="/contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

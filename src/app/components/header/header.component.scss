@@ -1,0 +1,253 @@
+//^============ google  font ================================
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+//^============ Animate.css ================================
+@import "~animate.css/animate.css";
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}
+
+#header-section {
+  //   background-color: #202528;
+  padding: 1rem 1rem;
+  background-image: linear-gradient(#000000be, #000000be),
+    url("../../../assets/bg11.jpg");
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#header-section .fixed-info {
+  background-color: transparent;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: absolute;
+  top: 20%;
+  left: 2.5%;
+  border: 1px solid #9fa8da;
+  // transform: rotate(90deg);
+  color: #9fa8da;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#header-section .fixed-info .developerPic {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  bottom: 87%;
+  border: 2px double #9ca6e1;
+}
+
+#header-section .fixed-info:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+#header-section .fixed-flags {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+}
+
+#header-section .fixed-flags img {
+  width: 60px !important;
+  display: inline-block !important;
+}
+
+#header-section .fixed-flags img.aqsa {
+  width: 45px !important;
+}
+
+#header-section .container .name-logo {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+#header-section .container .dev-name h1 {
+  padding-top: 10px;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  color: #edeffd;
+  margin-bottom: 1.2rem;
+}
+#header-section .container .dev-name h1 span {
+  color: #057ed1;
+}
+#header-section .container .dev-job p {
+  font-size: 1.6rem;
+  color: #edeffd;
+  letter-spacing: 2px;
+}
+
+#header-section .container .dev-logo {
+  margin-top: 10px;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  width: fit-content;
+}
+
+.social-media-icons .item {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-color: #0e1012;
+  border: 1px solid #9fa8da;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-media-icons .item a {
+  text-decoration: none !important;
+  color: #9fa8da;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons .item:hover {
+  background-color: #9fa8da;
+  border: 1px solid white;
+}
+
+.social-media-icons .item:hover a {
+  color: #0e1012;
+}
+
+.custom-hr {
+  border: 1px solid #9ca6e1 !important;
+}
+
+.typed-element {
+  color: #0398e0;
+}
+
+/**============================== media Query ===================================*/
+@media screen and (max-width: 768px) {
+  #header-section .container .name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #header-section .container .dev-name {
+    width: 100%;
+  }
+
+  #header-section .container .dev-name h1 {
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: #edeffd;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #header-section .container .dev-name h1 span.nn {
+    display: none;
+  }
+
+  #header-section .container .dev-job p {
+    font-size: 1rem;
+    color: #edeffd;
+    letter-spacing: 1px;
+  }
+
+  #header-section .container .dev-logo {
+    margin-top: 10px;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .social-media-icons {
+    margin-inline: auto;
+  }
+
+  .social-media-icons .item {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-media-icons .item a {
+    font-size: 14px;
+  }
+
+  #header-section .fixed-info {
+    display: none;
+  }
+
+  #header-section .fixed-flags img.aqsa {
+    display: none !important;
+  }
+
+  #header-section .fixed-flags {
+    top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #header-section .container .name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center !important;
+    width: fit-content !important;
+    margin-inline: auto !important;
+  }
+
+  .social-media-icons {
+    margin-inline: auto;
+  }
+
+  #header-section .container .dev-name h1 {
+    width: fit-content !important;
+  }
+
+  #header-section .fixed-flags img.aqsa {
+    display: none !important;
+  }
+  #header-section .fixed-flags img {
+    display: none !important;
+  }
+
+  #header-section .fixed-info {
+    display: none;
+  }
+}
+
+//! =======================================================

@@ -1,0 +1,76 @@
+<div class="_CC p-1 py-2 rounded">
+  <div class="container-fluid">
+    <div class="col-md-12">
+      <div>
+        <div class="search-container rounded p-2 raleway-font">
+          <div class="container-fluid">
+            <div class="row g-2 align-items-center">
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="fliter-container d-flex align-items-center justify-content-evenly gap-2 animate__animated animate__backInLeft animate__repeat-1"
+                >
+                  <h3 class="fw-bold text-uppercase p-0 m-0">Filter:</h3>
+                  <i class="fa-solid fa-filter fa-2xl"></i>
+                  <div>
+                    <select
+                      (change)="filterData()"
+                      class="rounded py-2 px-1 fw-bold"
+                      name="pCategory"
+                      [(ngModel)]="selectedCategory"
+                    >
+                      <option value="0" selected>All</option>
+
+                      <ng-container *ngFor="let catID of projectsCategories">
+                        <option [value]="catID.id">
+                          {{ catID.name }}
+                        </option>
+                      </ng-container>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                <div
+                  class="founded-p d-flex align-items-center justify-content-center gap-2 g-1 animate__animated animate__backInRight animate__repeat-1"
+                >
+                  <p class="_p p-0 m-0 fw-bold text-uppercase">
+                    Founded Projects :
+                  </p>
+                  <div class="PN">{{ projectsCategoryList.length }}</div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div
+                  routerLink="/charts"
+                  class="_Charts d-flex align-items-center justify-content-center gap-2 rounded shadow-lg px-3 animate__animated animate__backInLeft animate__repeat-1"
+                >
+                  <i
+                    class="fa-solid fa-chart-pie fa-2xl"
+                    routerLink="/charts"
+                  ></i>
+
+                  <h3 class="rounded text-uppercase p-0 m-0">Charts</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--^=======================================================================================================================-->
+        <section class="rounded mt-3 raleway-font">
+          <div class="container-fluid">
+            <div class="row p-1 g-3 justify-content-center">
+              <div
+                class="col-md-6 col-lg-4 animate__animated animate__backInLeft animate__repeat-1 shadow"
+                *ngFor="let project_ of projectsCategoryList"
+              >
+                <app-projectscards [project]="project_"></app-projectscards>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+section {
+  background-color: #001222;
+  margin-top: 20px !important;
+}
+.search-container {
+  background-color: #001222 !important;
+  color: #9fa8da !important;
+}
+
+select {
+  background-color: #9fa8da !important;
+  color: #283593;
+  border: none;
+  padding-inline: 16px !important;
+}
+
+._CC {
+  background-color: #334192;
+}
+
+.PN {
+  width: 40px;
+  height: 35px;
+  // border-top-right-radius: 50%;
+  // border-bottom-left-radius: 50%;
+  border-radius: 6px;
+  background-color: #9fa8da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #283593;
+  // border: 1px solid #9fa8da;
+}
+._p {
+  color: #9fa8da;
+  font-size: 20px !important;
+}
+
+select hr:last-child {
+  display: none !important;
+}
+
+.custom-hr {
+  border: 2px solid white !important;
+  border-radius: 6px;
+}
+
+._Charts img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+._Charts i {
+  transition: all 0.3s ease;
+}
+._Charts:hover i {
+  transform: scale(1.1) !important;
+}
+
+._Charts h3 {
+  font-weight: bold !important;
+  color: #9fa8da;
+}
+
+._Charts {
+  background-color: transparent;
+  border: 2px solid #283593;
+  padding: 4px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+._Charts:hover {
+  background-color: #313f8d !important;
+}
+
+.fliter-container {
+  background-color: #334192;
+
+  padding: 4px !important;
+  border-radius: 4px;
+}
+
+.founded-p {
+  background-color: #324090;
+  padding: 4px !important;
+  border-radius: 4px;
+}
